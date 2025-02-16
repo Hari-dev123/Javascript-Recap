@@ -1,8 +1,9 @@
 import express from 'express';
 import dbConnection from './db.js';
 import User from './model.js';
-
+import cors from 'cors'
 const app = express();
+app.use(cors());
 
 dbConnection();
 app.use(express.json());
