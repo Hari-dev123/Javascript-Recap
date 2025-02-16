@@ -118,6 +118,10 @@ app.delete('/api/delete/:id', async (req, res) => {
     }
 });
 
+app.get('/',(req,res)=>{
+    document.write('api working......')
+})
+
 const port = 8000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
